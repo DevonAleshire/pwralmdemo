@@ -94,7 +94,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: managedSolutions
-        path: pwralmdemo/pwralmdemo${{ inputs.solution_shipping_folder}}/${{ inputs.solution_name }}.zip
+        path: pwralmdemo/pwralmdemo/${{ inputs.solution_shipping_folder}}/${{ inputs.solution_name }}.zip
 
   release-to-staging:
     needs: [ convert-to-managed ]
